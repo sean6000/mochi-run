@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Mochi Run</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="game"></canvas>
+      <div id="hud">
+        <div id="hud-left">
+          <span id="hud-level">Level 1</span>
+          <span id="hud-stars">Stars 0 / 0</span>
+        </div>
+        <div id="hud-hint">Arrows / WASD · Space to jump</div>
+      </div>
+      <div id="overlay" class="overlay">
+        <div class="panel">
+          <h1 id="overlay-title">Mochi Run</h1>
+          <p id="overlay-sub">Collect stars. Reach the flag. Cute and easy.</p>
+          <button id="overlay-btn" type="button">Start</button>
+        </div>
+      </div>
+      <div id="touch">
+        <div class="touch-row">
+          <button type="button" id="btn-left" aria-label="Left">◀</button>
+          <button type="button" id="btn-right" aria-label="Right">▶</button>
+        </div>
+        <button type="button" id="btn-jump" aria-label="Jump">Jump</button>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
